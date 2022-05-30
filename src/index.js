@@ -4,7 +4,7 @@ import { createStore } from "redux";
 import { Provider } from "react-redux";
 
 import App from "./App";
-import todoReducer from "./modules/todoReducer";
+import todoReducer from "./modules/todo";
 
 const store = createStore(todoReducer);
 

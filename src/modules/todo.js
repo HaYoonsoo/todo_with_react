@@ -15,17 +15,20 @@ export const toggleTodo = id => ({
   id,
 });
 
-const initialState = [];
+const initialState = [
+  // { id, text, done}
+];
 
 const todoReducer = (state = initialState, action) => {
   switch(action.type) {
     case ADD_TODO:
       return state.concat(action.todo);
     case TOGGLE_TODO:
+      
       return state.map( (todo) => (
         (todo.id === action.id) ?
         { ...todo, done: !todo.done } :
-        todo)); 
+        todo));
     default:
       return state;
   }
