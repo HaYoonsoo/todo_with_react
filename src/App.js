@@ -18,7 +18,7 @@ import { addTodo, toggleTodo } from "./modules/todo";
 
 const App = () => {
   const [text, setText] = useState('');
-  const todoList = useSelector((state) => state);
+  const todoList = useSelector((state) => state.todoList);
   const dispatch = useDispatch();
 
   const add = () => {

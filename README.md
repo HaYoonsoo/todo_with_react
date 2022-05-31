@@ -2,6 +2,7 @@
 ## 설치한 라이브러리
 redux
 react-redux
+@reduxjs/toolkit
 styled-components
 
 ## 레퍼런스 사이트
