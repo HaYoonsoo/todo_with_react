@@ -1,22 +1,20 @@
-import React, { useState } from "react";
-import styled from 'styled-components';
-import './App.css';
+import React from "react";
+import styled from "styled-components";
+import "./App.css";
 
-import Header from './components/Header';
-import List from './components/List';
-import InputBox from './components/InputBox';
+import Header from "./components/Header";
+import List from "./components/List";
+import InputBox from "./components/InputBox";
 
-const AppBody = styled.div`
-
-`;
+const AppBody = styled.div``;
 
 const App = () => {
   return (
     <>
-      <AppBody> {/*
+      <AppBody>
         <Header />
         <List />
-  <InputBox /> */}
+        <InputBox />
       </AppBody>
     </>
   );
