@@ -2,9 +2,15 @@ import { createSlice } from '@reduxjs/toolkit';
 
 let nextId = 1;
 
+export interface Todo {
+  id: number,
+  text: string,
+  done: boolean,
+}
+
 const todoSlice = createSlice( {
   name: 'todo',
-  initialState: { todoList: [] },
+  initialState: { todoList: Array<Todo>(), },
   reducers: {
     addTodo(state, action) {
       /* immer가 이미 적용됨

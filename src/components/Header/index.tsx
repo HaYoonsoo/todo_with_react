@@ -1,11 +1,14 @@
+import React from "react";
 import { useMemo } from "react";
 import { useSelector } from "react-redux";
+import { RootState } from '../../modules'
+import { Todo } from '../../modules/todo';
 
 const Header = () => {
-  const todoList = useSelector((state) => state.todoList);
+  const todoList = useSelector<RootState, Array<Todo>>((state ) => state.todo.todoList);
 
   const total = useMemo( () => todoList.length, [todoList]);
-  const done = useMemo( () => todoList.filter( todo => todo.done ).length, [todoList]);
+  const done = useMemo( () => todoList.filter( (todo: Todo) => todo.done ).length, [todoList]);
 
   return (
     <>
@@ -14,7 +17,7 @@ const Header = () => {
         {total - done} / {total}
       </span>
     </>
-  );
+  )
 };
 
 export default Header;

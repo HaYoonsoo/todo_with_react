@@ -7,7 +7,7 @@ const InputBox = () => {
 
   const dispatch = useDispatch();
 
-  const handleInputChange = (e) => {
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value);
   };
   const handleButtonClick = () => {

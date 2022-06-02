@@ -1,13 +1,14 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux'
-import { toggleTodo } from '../../modules/todo';
+import { toggleTodo, Todo } from '../../modules/todo';
+import { RootState } from '../../modules';
 
 const List = () => {
 
   const dispatch = useDispatch();
-  const todoList = useSelector( (state) => state.todoList );
+  const todoList = useSelector<RootState, Array<Todo>>( (state) => state.todo.todoList );
 
-  const handleListClick = (id) => {
+  const handleListClick = (id: number) => {
     dispatch(toggleTodo(id));
   }
   return (
