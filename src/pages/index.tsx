@@ -1,7 +1,21 @@
+import type { NextPage } from 'next';
+import TodoApp from '../components/todoApp';
+
+const App: NextPage = () => {
+  return (
+    <div>
+      <TodoApp />
+    </div>
+  );
+}
+
+export default App;
+
+/*
 import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../../styles/Home.module.css'
 
 const Home: NextPage = () => {
   return (
@@ -70,3 +84,4 @@ const Home: NextPage = () => {
 }
 
 export default Home
+*/
