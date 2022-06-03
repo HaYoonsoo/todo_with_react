@@ -18,3 +18,6 @@ https://react.vlpt.us/mashup-todolist/
 dist폴더 분리: https://stackoverflow.com/questions/41853422/how-to-compile-typescript-using-npm-command
 https://github.com/vercel/next.js/discussions/13617
 파일 체크를 하지만 파일 생성을 하고 싶지 않다면 tsc --noEmit을 이용해볼 수 있다.
+
+#### next.js에서 redux사용 설정
+https://cotak.tistory.com/164

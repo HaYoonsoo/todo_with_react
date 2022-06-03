@@ -10,12 +10,12 @@ const Header: NextPage = () => {
   const done = todoList.filter((todo: Todo) => todo.done).length;
 
   return (
-    <header>
+    <div>
       <h1>Header</h1>
       <span>
         {total - done} / {total}
       </span>
-    </header>
+    </div>
   );
 };
 

@@ -3,17 +3,15 @@ import styled from 'styled-components';
 import Header from './Header';
 import List from './List';
 import InputBox from './InputBox';
-
-const AppBody = styled.div`
-`
+import styles from './todoApp.module.css';
 
 const TodoApp: NextPage = () => {
   return (
-    <AppBody>
+    <div className={styles.AppBody}>
       <Header />
       <List />
       <InputBox />
-    </AppBody>
+    </div>
   )
 }
 
